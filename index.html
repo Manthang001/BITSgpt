@@ -5,55 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BITS Pilani AI Guide</title>
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f0f2f5;
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
-        }
-        header {
-            background-color: #003366; /* BITS Pilani Blue */
-            color: white;
-            padding: 1rem;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        header h1 { margin: 0; font-size: 1.8rem; }
-        header p { margin: 5px 0 0 0; font-size: 1rem; opacity: 0.9; }
-        main {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 15px;
-        }
-        .chat-container {
-            width: 100%;
-            max-width: 900px;
-            height: 85vh;
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        body { 
+            margin: 0; 
+            padding: 0; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            /* Deep cinematic background gradient */
+            background: linear-gradient(135deg, #0d0d12 0%, #1a1a2e 100%);
+            color: #ffffff;
+            display: flex; 
+            flex-direction: column; 
+            height: 100vh; 
             overflow: hidden;
         }
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
+        header { 
+            padding: 1.5rem; 
+            text-align: center; 
+            background: rgba(255, 255, 255, 0.03);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        header h1 { 
+            margin: 0; 
+            font-size: 1.8rem; 
+            letter-spacing: 1.5px;
+            /* Subtle glowing text effect */
+            text-shadow: 0 0 15px rgba(0, 195, 255, 0.4);
+        }
+        main { 
+            flex: 1; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            padding: 20px; 
+            /* Atmospheric radial glow behind the chat */
+            background-image: radial-gradient(circle at 50% 10%, rgba(0, 195, 255, 0.1) 0%, transparent 60%);
+        }
+        .glass-container { 
+            width: 100%; 
+            max-width: 900px; 
+            height: 85vh; 
+            /* The Glassmorphism Effect */
+            background: rgba(20, 20, 30, 0.4); 
+            backdrop-filter: blur(16px); 
+            -webkit-backdrop-filter: blur(16px);
+            border-radius: 16px; 
+            border: 1px solid rgba(255, 255, 255, 0.08); 
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5); 
+            overflow: hidden; 
+        }
+        iframe { 
+            width: 100%; 
+            height: 100%; 
+            border: none; 
         }
     </style>
 </head>
 <body>
     <header>
         <h1>BITSian AI Guide</h1>
-        <p>Ask me anything about the campus, hostels, or courses.</p>
     </header>
     <main>
-        <div class="chat-container">
-            <iframe src="https://manthangupta21-bitsgpt.hf.space" allow="microphone"></iframe>
+        <div class="glass-container">
+            <iframe src="https://manthangupta21-bitsgpt.hf.space?__theme=dark" allow="microphone"></iframe>
         </div>
     </main>
 </body>
